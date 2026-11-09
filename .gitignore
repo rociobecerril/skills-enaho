@@ -1,0 +1,11 @@
+# Microdatos del INEI: cada quien los baja (pesan y no se redistribuyen)
+datos/*.zip
+datos/*.dta
+*.dta
+
+# La base limpia se regenera con la skill
+salidas/*.parquet
+
+.venv/
+__pycache__/
+.DS_Store
