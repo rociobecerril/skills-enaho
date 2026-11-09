@@ -7,8 +7,9 @@ allowed-tools: Bash(uv run *)
 
 # Graficar la ENAHO
 
-1. Si no existe `salidas/personas_2024.parquet`, usa primero la skill **limpiando-enaho**
-   y espera a que su validación diga VÁLIDA.
+1. Revisa si existe `salidas/personas_2024.parquet`. Si NO existe, invoca la skill
+   `limpiando-enaho` con la herramienta Skill (argumento: 2024) y espera a que su
+   validación diga VÁLIDA. No corras limpiar.py tú misma: la limpieza es tarea de esa skill.
 2. Elige `--por` según la pregunta: `area`, `sexo`, `edad` o `departamento`
    (si el usuario escribió un argumento, es $ARGUMENTS). Para pobreza extrema agrega
    `--indicador extrema`.
